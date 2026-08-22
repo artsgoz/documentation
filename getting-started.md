@@ -39,4 +39,4 @@ curl -i -X POST http://localhost:3000/api/v1/users/register \\
   -d '{"email":"artist@example.com","password":"correct-password"}'
 ```
 
-A successful request returns `201 Created` and the new user ID. See [Users](api/users.md) for request validation and error responses.
+A successful request returns `201 Created` and the new user ID. See [Users]({{ '/api/users/' | relative_url }}) for request validation and error responses.

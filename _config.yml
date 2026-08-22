@@ -2,6 +2,7 @@ title: Artsgoz API
 description: Documentation for the Artsgoz Go API.
 theme: just-the-docs
 color_scheme: dark_wider
+permalink: pretty
 search_enabled: true
 nav_enabled: true
 heading_anchors: true
