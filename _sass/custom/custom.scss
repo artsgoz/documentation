@@ -175,7 +175,7 @@ iframe {
 
 // If width of display is at least content+nav width
 // (i.e. whitespace on either side of site):
-@media (min-width: $content-width + $nav-width) {
+@media (min-width: #{$content-width + $nav-width}) {
   // Set default site title in sidebar font size
   .site-title {
     font-size: 24px !important;
