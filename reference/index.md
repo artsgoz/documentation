@@ -9,4 +9,4 @@ has_children: true
 
 You may see reference guides listed by topic in this section.
 
-[About Github Issue](../reference/git/gh-issue/index.md)
+[About Github Issue](../reference/git/gh-issue/index)

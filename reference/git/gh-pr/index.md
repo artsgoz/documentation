@@ -1,8 +1,8 @@
 ---
 title: Github Pull Requests
 layout: default
-parent: Git Best Practice
-nav_order: 2
+parent: GitHub
+nav_order: 3
 ---
 
 # Github Pull Requests

@@ -1,32 +1,25 @@
 ---
 title: Artsgoz API
 layout: home
+nav_order: 1
 ---
 
-# Artsgoz API
+# Getting Start
 
-Documentation for the Artsgoz backend: a Go API built with Gin, GORM, and PostgreSQL.
+เว็บนี้เป็น documentation ไว้ใช้รวบรวม docs ต่าง ๆ สำหรับพัฬนาเว็บ artsgoz
 
-## Explore the API
+# Directory
 
-- [Getting Started](getting-started/) — run the service and make your first request.
-- [API Reference](api/) — browse the available endpoints.
-- [Users](api/users/) — register users and handle validation errors.
+หมวดหมู่ต่าง ๆ ในเว็บนี้
 
-## Understand the service
+## API Reference
 
-- [Architecture](architecture/) — follow a request from Gin to PostgreSQL.
-- [Configuration](configuration/) — configure the API and database connection.
-- [Development](development/) — run checks and build this documentation locally.
+สำหรับ API reference สามารถดูได้ที่หน้า [API Reference](./api/index)
 
-## Quick check
+## Reference Note
 
-Once the API is running, verify its health:
+สำหรับ reference note, way of work, best practice ต่าง ๆ สามารถดูได้ที่หน้า [Reference](./reference/index)
 
-```sh
-curl http://localhost:3000/healthz
-```
+# Contact
 
-```json
-{ "status": "ok" }
-```
+- ถ้าเกิดอยากเพิ่ม content ในนี้ สามารถเข้าไปแก้ได้ที่ [artsgoz/documentation](https://github.com/artsgoz/documentation)
