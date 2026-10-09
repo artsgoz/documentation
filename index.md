@@ -6,7 +6,7 @@ nav_order: 1
 
 # Getting Start
 
-เว็บนี้เป็น documentation ไว้ใช้รวบรวม docs ต่าง ๆ สำหรับพัฬนาเว็บ artsgoz
+เว็บนี้เป็น documentation ไว้ใช้รวบรวม docs ต่าง ๆ สำหรับพัฒนาเว็บ artsgoz
 
 # Directory
 
