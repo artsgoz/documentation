@@ -4,7 +4,7 @@ layout: home
 nav_order: 1
 ---
 
-# Getting Start
+# Getting Started
 
 เว็บนี้เป็น documentation ไว้ใช้รวบรวม docs ต่าง ๆ สำหรับพัฒนาเว็บ artsgoz
 
