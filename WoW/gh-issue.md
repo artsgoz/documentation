@@ -66,7 +66,7 @@ Github Issue คือ project management tool อยู่ใน git repo ใ�
 
 ![Development Branch](./assets/gh-issue/img7.png)
 
-> [!Note]
+> {: .note }
 > สำหรับใครที่สงสัยว่า branch คืออะไร ทำไมต้องมี branch [อ่านที่นี่: Branch](./branch-and-pr)
 
 วิธีตั้งชื่อ Branch ให้วาง format ตามนี้
