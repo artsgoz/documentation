@@ -6,20 +6,18 @@ nav_order: 1
 
 # Getting Started
 
-เว็บนี้เป็น documentation ไว้ใช้รวบรวม docs ต่าง ๆ สำหรับพัฒนาเว็บ artsgoz
+เว็บไซต์นี้เป็นศูนย์รวมเอกสารสำหรับทีม Artsgoz ทั้งแนวทางการทำงาน ขั้นตอนการพัฒนา ข้อมูล environment และ reference ต่าง ๆ ที่ใช้ร่วมกันในทีม
 
-# Directory
+## Directory
 
-หมวดหมู่ต่าง ๆ ในเว็บนี้
+- [Way of Working](./WoW/) — แนวทางการสื่อสาร การทำงานแบบ sprint การใช้งาน GitHub Issues และขั้นตอนการสร้าง branch และ pull request
+- [Environments & Infrastructure](./infrastructure/) — รายละเอียดของ development, staging และ production พร้อม URL ของแต่ละ service
+- [Reference Notes](./reference/) — คู่มือ best practices และข้อมูลอ้างอิงสำหรับการพัฒนา
 
-## API Reference
+## Contributing
 
-สำหรับ API reference สามารถดูได้ที่หน้า [API Reference](./api/index)
+หากต้องการเพิ่มหรือแก้ไขเนื้อหา สามารถส่งการเปลี่ยนแปลงได้ที่ repository [artsgoz/documentation](https://github.com/artsgoz/documentation)
 
-## Reference Note
+## Contact
 
-สำหรับ reference note, way of work, best practice ต่าง ๆ สามารถดูได้ที่หน้า [Reference](./reference/index)
-
-# Contact
-
-- ถ้าเกิดอยากเพิ่ม content ในนี้ สามารถเข้าไปแก้ได้ที่ [artsgoz/documentation](https://github.com/artsgoz/documentation)
+หากมีคำถามหรือต้องการสิทธิ์เข้าถึง กรุณาติดต่อ Project Manager (PM) ผ่าน Artsgoz Tech Discord

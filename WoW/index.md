@@ -36,4 +36,4 @@ We use GitHub Projects as our single source of truth for task management, bug tr
 - **Project Board**: [Artsgoz GitHub Project](https://github.com/orgs/artsgoz/projects/3)
 - **Ticket Lifecycle**: All team members are expected to keep their assigned tickets updated. When picking up a task, assign yourself and move the ticket through the appropriate columns (e.g., To Do → In Progress → In Review → Done).
 
-Please see วิธีใช้ [Github Issue](../reference/git/gh-issue/index)
+Please see วิธีใช้ [Github Issue](./branch-and-pr)
