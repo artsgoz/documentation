@@ -70,7 +70,8 @@ Now that you are up to date, create your new branch. We use the `git checkout -b
 git checkout -b feature/your-branch-name
 ```
 
-> [!note] Naming Your Branch
+> {: .note }
+> Naming Your Branch
 > Keep the name short but descriptive. If you are working on a specific ticket, include the ticket number!
 >
 > - `Good`: feature/login-button or feature/task-123
@@ -93,7 +94,8 @@ or you can just `git push`
 
 When you draft a PR, it already has a template for you to follow. Please fill it out thoroughly to provide context for your reviewers. Also, carefully check that you are pointing your PR to the correct target branch before submitting.
 
-> [!Warning] CHECK TARGET BRANCH CAREFULLY
+> {: .warning }
+> CHECK TARGET BRANCH CAREFULLY
 > Please check that you are pointing your PR to the correct target branch before submitting.
 
 ```mermaid

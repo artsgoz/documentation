@@ -17,7 +17,7 @@ We maintain three distinct environments that directly correspond to our Git bran
 
 Below is the directory of our active services and their corresponding URLs across all three environments:
 
-> [!NOTE]
+> {: .note }
 > All 3 environments are still show maintenance page.
 
 | Service            | Development (Dev)                                                        | Staging                                                                          | Production (Prod)                                                |

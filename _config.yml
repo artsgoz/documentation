@@ -23,6 +23,9 @@ callouts:
 
 url: https://docs.artsgoz.dev
 
+mermaid:
+  version: "9.1.3"
+
 aux_links:
   "Backend Repository":
     - "https://github.com/artsgoz/artsgoz-backend"

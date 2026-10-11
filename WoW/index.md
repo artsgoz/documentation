@@ -18,7 +18,7 @@ We use <mark>Artsgoz Tech discord</mark> channel for internal communication.
 
 We follow an Agile methodology with a 2-week sprint cycle to ensure our development remains iterative, transparent, and adaptable. Our standard sprint routine includes:
 
-> [!NOTE]
+> {: .note }
 > Maple, please check and update this krub.
 
 - **Sprint Planning**: Held at the start of the sprint week to define our goals, discuss priorities, and assign tasks.
