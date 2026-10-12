@@ -17,7 +17,7 @@ Github Issue คือ project management tool อยู่ใน git repo ใ�
 
 ใน issue หรือ การ์ดหนึ่งก็จะระบุ scope ของงานนั้น ๆ แล้วใน issue หรือ การ์ดนั้น ๆ ก็สามารถแตกงานย่อย ๆ ลงมาได้อีกที เช่น งาน `[UX/UI] Mobile Design` พอเรามาดู จะเห็นได้ว่า scope งานนี้มันใหญ่มาก คือให้ design หน้า mobile เว็บเรามีตั้งหลายหน้า เราจะเขียนการ์ดรวมเป็นก้อนแบบนี้ก็อาจจะใหญ่เกินไป เราสามารถแตกการืดนี้ออกมาได้โดยการสร้าง sub-issue ไว้ในการืดนี้
 
-![ตัวอย่าง issue และ sub-issue ใน github project](./assets/gh-issue/gh-issue/img1.png)
+![ตัวอย่าง issue และ sub-issue ใน github project](./assets/gh-issue/img1.png)
 
 ## Interface ภายใน issue
 

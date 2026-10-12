@@ -24,7 +24,7 @@ callouts:
 url: https://docs.artsgoz.dev
 
 mermaid:
-  version: "11.4.0"
+  version: "12.0.0"
 
 aux_links:
   "Backend Repository":
