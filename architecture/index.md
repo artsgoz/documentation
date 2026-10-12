@@ -94,36 +94,6 @@ artsgoz-monorepo/
 └── pnpm-workspace.yaml         Workspace package boundaries
 ```
 
-### Applications
-
-#### Artsgoz frontend
-
-`apps/artsgoz-frontend` is the most developed application. It uses feature-oriented modules for articles, clubs, curriculum, forms, internships, professors, student services, and other public-facing functionality.
-
-Page-level route modules assemble features under a shared `MainLayout`. React Router provides client-side routing, and Firebase Hosting rewrites unknown paths to `index.html` so direct navigation to SPA routes works. The application also initializes Thai and English translations before rendering.
-
-#### Artsgoz backoffice
-
-`apps/artsgoz-backoffice` is a separate Vite SPA intended for administrative workflows. It currently contains the generated Nx starter routes and a build-time maintenance-mode switch. It is deployed independently from the public Artsgoz frontend.
-
-#### Artsgoz API
-
-The Artsgoz API is not part of the monorepo. It is developed in [`artsgoz/artsgoz-backend`](https://github.com/artsgoz/artsgoz-backend) using Go 1.25 and Fiber v3.
-
-The backend follows Domain-Driven Design and Clean Architecture. Business areas live under `internal/modules`, with separate domain, application, infrastructure, and interface layers. The current user module supports Firebase Authentication, Chulalongkorn email validation, role-based access, and Firestore persistence.
-
-The repository also contains a pgx connection pool, PostgreSQL migrations, and GCP Secret Manager integration. PostgreSQL is planned as the on-premises system of record, but the current user repository still uses Firestore. The service has no deployed environment or production endpoint yet.
-
-#### Aksornsara frontend
-
-`apps/aksornsara-frontend` is a separate Vite SPA for the Aksornsara product. Cloud Build injects its API base URL and maintenance-mode setting during the build. The current application UI is still an early scaffold.
-
-#### Aksornsara API
-
-`apps/aksornsara-api` is a NestJS service bundled with Webpack and deployed through Firebase App Hosting. It listens on the platform-provided `PORT` and exposes routes below `/api`.
-
-The current implementation contains only a health-like starter response. Authentication, domain modules, persistence, and PostgreSQL connectivity still need to be implemented.
-
 ### Shared libraries
 
 ```mermaid

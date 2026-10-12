@@ -2,6 +2,7 @@
 title: Terraform
 layout: default
 nav_order: 3
+parent: Environments & Infrastructure
 has_children: true
 ---
 
