@@ -70,7 +70,7 @@ Now that you are up to date, create your new branch. We use the `git checkout -b
 git checkout -b feature/your-branch-name
 ```
 
-> {: .note }
+> {: .tip }
 > Naming Your Branch
 > Keep the name short but descriptive. If you are working on a specific ticket, include the ticket number!
 >

@@ -1,7 +1,7 @@
 title: Artsgoz API
 description: Documentation for the Artsgoz Go API.
 theme: just-the-docs
-color_scheme: wider
+color_scheme: dark-wider
 permalink: pretty
 search_enabled: true
 nav_enabled: true
@@ -14,12 +14,15 @@ search:
   previews: 3
 
 callouts:
-  blue:
+  note:
     title: Note
     color: blue
-  green:
+  tip:
     title: Tip
     color: green
+  warning:
+    title: Warning
+    color: yellow
 
 url: https://docs.artsgoz.dev
 
