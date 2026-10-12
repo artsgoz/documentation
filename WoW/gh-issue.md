@@ -32,7 +32,7 @@ Github Issue คือ project management tool อยู่ใน git repo ใ�
 ส่วนใหญ่ที่ pm/po จะเขียนใน description จะมี
 
 - description ใช้อธิบายรายละเอียดการ์ดนี้
-- accentance criteria คือ จะต้องทำอะไรบ้างถึงจะถือว่างานเสร็จ
+- acceptance criteria คือ จะต้องทำอะไรบ้างถึงจะถือว่างานเสร็จ
 - attachments ใช้แนบลิงก์ที่คิดว่า assignee ต้องเข้าไปดูเพื่อเป็น reference
 - note โน้ตเพิ่มเติม
 
@@ -47,8 +47,8 @@ Github Issue คือ project management tool อยู่ใน git repo ใ�
 ### Labels
 
 | ![Label]({{ site.baseurl }}/WoW/assets/gh-issue/img4.png) | ![Type]({{ site.baseurl }}/WoW/assets/gh-issue/img5.png) |
-| ---------------------------------------------------------------- | --------------------------------------------------------------- |
-| Labels แปะไว้ว่าอันนี้เกี่ยวกับอะไร                              | Type บอกว่างานนี้เป็นประเภทไหน                                  |
+| --------------------------------------------------------- | -------------------------------------------------------- |
+| Labels แปะไว้ว่าอันนี้เกี่ยวกับอะไร                       | Type บอกว่างานนี้เป็นประเภทไหน                           |
 
 ### Projects
 

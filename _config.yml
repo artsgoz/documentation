@@ -30,5 +30,9 @@ mermaid:
   version: "12.0.0"
 
 aux_links:
-  "Backend Repository":
+  "Backend":
     - "https://github.com/artsgoz/artsgoz-backend"
+  "Monorepo":
+    - "https://github.com/artsgoz/artsgoz-monorepo"
+  "Docs Contribution":
+    - "https://github.com/artsgoz/documentation"

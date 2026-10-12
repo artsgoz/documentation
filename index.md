@@ -16,8 +16,8 @@ nav_order: 1
 
 ## Contributing
 
-หากต้องการเพิ่มหรือแก้ไขเนื้อหา สามารถส่งการเปลี่ยนแปลงได้ที่ repository [artsgoz/documentation](https://github.com/artsgoz/documentation)
+หากต้องการเพิ่มหรือแก้ไขเนื้อหา สามารถเปิด PR ได้ที่ [artsgoz/documentation](https://github.com/artsgoz/documentation)
 
 ## Contact
 
-หากมีคำถามหรือต้องการสิทธิ์เข้าถึง กรุณาติดต่อ Project Manager (PM) ผ่าน Artsgoz Tech Discord
+หากมีคำถามหรือต้องการสิทธิ์เข้าถึง กรุณาติดต่อ Project Manager (PM) Maple? ผ่าน Artsgoz Tech Discord
