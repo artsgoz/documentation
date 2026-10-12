@@ -40,7 +40,7 @@ gitGraph
     merge Develop id: "PR to Staging"
 
     %% Promote to Prod
-    checkout main
+    checkout prod
     merge Staging id: "PR to Prod"
 ```
 
