@@ -1,3 +1,6 @@
 {
-  theme: "dark";
+  theme: "dark",
+  gitGraph: {
+    mainBranchName: "prod"
+  }
 }
