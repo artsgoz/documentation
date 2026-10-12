@@ -17,13 +17,13 @@ Github Issue คือ project management tool อยู่ใน git repo ใ�
 
 ใน issue หรือ การ์ดหนึ่งก็จะระบุ scope ของงานนั้น ๆ แล้วใน issue หรือ การ์ดนั้น ๆ ก็สามารถแตกงานย่อย ๆ ลงมาได้อีกที เช่น งาน `[UX/UI] Mobile Design` พอเรามาดู จะเห็นได้ว่า scope งานนี้มันใหญ่มาก คือให้ design หน้า mobile เว็บเรามีตั้งหลายหน้า เราจะเขียนการ์ดรวมเป็นก้อนแบบนี้ก็อาจจะใหญ่เกินไป เราสามารถแตกการืดนี้ออกมาได้โดยการสร้าง sub-issue ไว้ในการืดนี้
 
-![ตัวอย่าง issue และ sub-issue ใน github project](./assets/gh-issue/img1.png)
+![ตัวอย่าง issue และ sub-issue ใน github project](../WoW/assets/gh-issue/img1.png)
 
 ## Interface ภายใน issue
 
 จากรูปด้านล่างเราจะเห็นหน้าตาภายใน Issue ว่ามีส่วนประกอบอะไรบ้าง
 
-![ตัวอย่าง issue ใน github project](./assets/gh-issue/img2.png)
+![ตัวอย่าง issue ใน github project](../WoW/assets/gh-issue/img2.png)
 
 ### Description
 
@@ -38,7 +38,7 @@ Github Issue คือ project management tool อยู่ใน git repo ใ�
 
 ส่วนถัดไปที่สำคัญเหมือนกันคือ ด้านขวา
 
-![ตัวอย่าง Fields ต่าง ๆ ทางด้านขวา](./assets/gh-issue/img3.png)
+![ตัวอย่าง Fields ต่าง ๆ ทางด้านขวา](../WoW/assets/gh-issue/img3.png)
 
 ### Assignee
 
@@ -46,15 +46,15 @@ Github Issue คือ project management tool อยู่ใน git repo ใ�
 
 ### Labels
 
-| ![Label](./assets/gh-issue/img4.png) | ![Type](./assets/gh-issue/img5.png) |
-| ------------------------------------ | ----------------------------------- |
-| Labels แปะไว้ว่าอันนี้เกี่ยวกับอะไร  | Type บอกว่างานนี้เป็นประเภทไหน      |
+| ![Label](../WoW/assets/gh-issue/img4.png) | ![Type](../WoW/assets/gh-issue/img5.png) |
+| ----------------------------------------- | ---------------------------------------- |
+| Labels แปะไว้ว่าอันนี้เกี่ยวกับอะไร       | Type บอกว่างานนี้เป็นประเภทไหน           |
 
 ### Projects
 
 ตรงนี้ก็สำคัญ สำหรับรายละเอียดว่าแต่ละอันมีดังนี้
 
-![Project Label](./assets/gh-issue/img6.png)
+![Project Label](../WoW/assets/gh-issue/img6.png)
 
 - Team: ทีมที่เป็นเจ้าของงานนี้ >> Product (PM/PO), Engineering (Dev), Design (UX/UI)
 - Priority: ความสำคัญของงานนี้ P0 คือสำคัญสุด แล้วก็ไล่รองลงมา
@@ -64,7 +64,7 @@ Github Issue คือ project management tool อยู่ใน git repo ใ�
 
 ส่วนนี้ สำหรับ dev ที่จะรับงานใน issue มา implement ให้กดสร้างจากตรงนี้ แล้วค่อยแยกไปทำงานใน branch ของตัวเอง
 
-![Development Branch](./assets/gh-issue/img7.png)
+![Development Branch](../WoW/assets/gh-issue/img7.png)
 
 > {: .note }
 > สำหรับใครที่สงสัยว่า branch คืออะไร ทำไมต้องมี branch [อ่านที่นี่: Branch](./branch-and-pr)
@@ -78,7 +78,7 @@ Github Issue คือ project management tool อยู่ใน git repo ใ�
 ตัวอย่าง
 พอเรากด create a branch
 
-![Branch creating](./assets/gh-issue/img8.png)
+![Branch creating](../WoW/assets/gh-issue/img8.png)
 
 มันจะโชว์ default ชื่อมาให้เราเป็น [issue-id]-[issue-title] มาแล้ว สิ่งที่เราต้องเพิ่มคือ เพิ่ม type
 
