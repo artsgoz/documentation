@@ -7,14 +7,15 @@ parent: Environments & Infrastructure
 
 # Infrastructure Architecture
 
-Artsgoz services run primarily on Google Cloud Platform (GCP). The application code, build configuration, and Terraform definitions are maintained in the [`artsgoz/artsgoz-monorepo`](https://github.com/artsgoz/artsgoz-monorepo).
+Artsgoz services run primarily on Google Cloud Platform (GCP). Frontend applications, the Aksornsara API, build configuration, and Terraform definitions are maintained in the [`artsgoz/artsgoz-monorepo`](https://github.com/artsgoz/artsgoz-monorepo). The Go-based Artsgoz API is maintained separately in [`artsgoz/artsgoz-backend`](https://github.com/artsgoz/artsgoz-backend) and has not yet been deployed.
 
 ## Platform overview
 
 | Area                   | Platform              | Responsibility                                                                  |
 | ---------------------- | --------------------- | ------------------------------------------------------------------------------- |
 | Frontend hosting       | Firebase Hosting      | Hosts and serves the frontend applications.                                     |
-| API hosting            | Firebase App Hosting  | Builds and runs the API services.                                               |
+| Aksornsara API hosting | Firebase App Hosting  | Builds and runs the NestJS Aksornsara API.                                      |
+| Artsgoz API            | Go and Fiber          | Separate backend under development; no deployed environment yet.                |
 | Database               | PostgreSQL (on-premises) | Stores application data on Artsgoz-managed infrastructure.                    |
 | CI/CD                  | Google Cloud Build    | Builds, tests, and deploys changes.                                             |
 | Infrastructure as code | Terraform             | Defines and manages cloud infrastructure.                                       |
@@ -25,16 +26,17 @@ Artsgoz services run primarily on Google Cloud Platform (GCP). The application c
 ```mermaid
 flowchart LR
     Developer[Developer] -->|Push or pull request| GitHub[GitHub monorepo]
+    BackendRepo[GitHub artsgoz-backend] --> ArtsAPI[Artsgoz API<br/>not deployed]
     GitHub -->|Trigger| CloudBuild[Google Cloud Build]
     CloudBuild -->|Deploy frontend| FirebaseHosting[Firebase Hosting]
-    CloudBuild -->|Deploy API| AppHosting[Firebase App Hosting]
+    CloudBuild -->|Deploy Aksornsara API| AppHosting[Firebase App Hosting]
     Terraform[Terraform] -->|Provision and configure| GCP[Google Cloud Platform]
     GCP --> FirebaseHosting
     GCP --> AppHosting
-    AppHosting -->|Connect to database| PostgreSQL[(On-premises PostgreSQL)]
+    ArtsAPI -.->|Planned connection| PostgreSQL[(On-premises PostgreSQL)]
 ```
 
-The monorepo is the source of truth for application and infrastructure changes. Cloud Build provides the delivery path from GitHub to the appropriate hosting service, while Terraform manages the cloud resources required by those services.
+The monorepo is the source of truth for its applications and infrastructure. Cloud Build provides their delivery path to Firebase, while Terraform manages the required cloud resources. The separate Artsgoz backend repository is not currently covered by this deployment pipeline.
 
 ## Hosting
 
@@ -44,15 +46,23 @@ Frontend applications are deployed to **Firebase Hosting**. Firebase Hosting pro
 
 When changing frontend hosting configuration, check both the application configuration and the Firebase configuration in the monorepo. Verify the target environment before deploying.
 
-### API
+### Aksornsara API
 
-API services are deployed using **Firebase App Hosting**. App Hosting builds the API from the source repository and runs it on the managed Google Cloud infrastructure associated with the target environment.
+The NestJS Aksornsara API is deployed using **Firebase App Hosting**. App Hosting builds the API from the monorepo and runs it on managed Google Cloud infrastructure associated with the target environment.
 
 Configuration that varies between environments, such as service endpoints or credentials, must not be hard-coded in source files. Store sensitive values using the secret-management mechanism configured for the service.
 
+### Artsgoz API
+
+The Artsgoz API is a Go 1.25 service built with Fiber v3 in [`artsgoz/artsgoz-backend`](https://github.com/artsgoz/artsgoz-backend). It follows Domain-Driven Design and Clean Architecture and currently includes Firebase Authentication, Firestore-backed user persistence, PostgreSQL scaffolding, migrations, and Secret Manager integration.
+
+The Artsgoz API has **not been deployed**. Its hosting platform, environments, endpoint, deployment pipeline, and network connectivity to the on-premises PostgreSQL server still need to be defined.
+
 ## Database
 
-Application data is stored in **PostgreSQL running on-premises**. The API hosted on Firebase App Hosting connects to this database; the frontend must access application data through the API rather than connecting to PostgreSQL directly.
+Artsgoz application data is intended to use **PostgreSQL running on-premises**. The future Go API will provide the application boundary; frontend applications must access data through the API rather than connecting to PostgreSQL directly.
+
+The backend repository already contains a pgx connection pool and an initial SQL migration. However, its current user module uses Firestore, and the service is not deployed, so production PostgreSQL integration is not yet complete.
 
 Database credentials and connection details are sensitive and must not be committed to Git. Access should be limited to authorized people and services. Changes to the database server itself are managed separately from the GCP resources defined by Terraform.
 
@@ -63,10 +73,12 @@ Google Cloud Build is responsible for the CI/CD pipeline. A typical change follo
 1. A developer pushes a branch and opens a pull request in the monorepo.
 2. Cloud Build runs the configured validation, build, and test steps.
 3. After the change is merged into an environment branch, the deployment pipeline builds the relevant services.
-4. Cloud Build deploys each service to its configured Firebase hosting platform.
+4. Cloud Build deploys each monorepo service to its configured Firebase hosting platform.
 5. The team verifies the deployment using the URLs listed on the [Environments](environments) page.
 
 The `develop`, `staging`, and `prod` branches correspond to the development, staging, and production environments. See the [branch and pull request workflow](../WoW/branch-and-pr) before promoting a change.
+
+This workflow does not yet deploy the Go-based Artsgoz API.
 
 {: .warning }
 
@@ -104,3 +116,4 @@ If an emergency requires a manual console change, document it and reconcile it w
 - [Service environments and URLs](./environments)
 - [Branch and pull request workflow](../WoW/branch-and-pr)
 - [`artsgoz/artsgoz-monorepo`](https://github.com/artsgoz/artsgoz-monorepo)
+- [`artsgoz/artsgoz-backend`](https://github.com/artsgoz/artsgoz-backend)
