@@ -103,7 +103,4 @@ flowchart RL
     Feature([feature/branch-name]) -->|1. Pull Request| Develop[Develop]
     Develop -->|2. Pull Request| Staging[Staging]
     Staging -->|3. Pull Request| Prod[Prod]
-
-    classDef branch fill:#f9f9f9,stroke:#333,stroke-width:2px;
-    class Feature,Develop,Staging,Prod branch;
 ```
