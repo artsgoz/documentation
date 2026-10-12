@@ -2,7 +2,7 @@
 title: Environments
 layout: default
 nav_order: 1
-parent: Way of Working
+parent: Environments & Infrastructure
 ---
 
 # Environments
