@@ -1,5 +1,5 @@
-title: Artsgoz API
-description: Documentation for the Artsgoz Go API.
+title: Artsgoz Documentation
+description: Documentation for the Artsgoz Tech Squad.
 theme: just-the-docs
 color_scheme: dark_wider
 permalink: pretty
@@ -24,7 +24,7 @@ callouts:
     title: Warning
     color: yellow
 
-url: https://docs.artsgoz.dev
+url: https://docs.artsgoz.com
 
 mermaid:
   version: "12.0.0"
